@@ -1,1 +1,5 @@
 .terraform
+*.env*
+!.env.template
+plan.out
+terraform.tfstate*
