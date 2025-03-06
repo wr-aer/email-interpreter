@@ -19,12 +19,20 @@ resource "aws_s3_bucket_policy" "ses_put_s3_policy" {
 POLICY
 }
 
-resource "aws_sesv2_email_identity" "ses_receiving_email_identity" {
+resource "aws_sesv2_email_identity" "ses_receiving_email_domain_identity" {
   email_identity = var.domain_name
+}
+
+resource "aws_sesv2_email_identity" "ses_receiving_email_address_identity" {
+  email_identity = var.email_address
 }
 
 resource "aws_ses_receipt_rule_set" "ses_receiving_rule_set" {
   rule_set_name = "${var.project_name}-ses-receiving-rule-set"
+}
+
+resource "aws_ses_active_receipt_rule_set" "ses_receiving_rule_set_active_designation" {
+  rule_set_name = aws_ses_receipt_rule_set.ses_receiving_rule_set.rule_set_name
 }
 
 resource "aws_ses_receipt_rule" "ses_receiving_storing_rule" {
