@@ -40,6 +40,7 @@ resource "aws_ses_receipt_rule" "ses_receiving_storing_rule" {
   rule_set_name = aws_ses_receipt_rule_set.ses_receiving_rule_set.rule_set_name
   enabled       = true
   recipients    = [var.email_address]
+  scan_enabled  = true
 
   s3_action {
     bucket_name = aws_s3_bucket.incoming_emails_bucket.id
