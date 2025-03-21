@@ -19,16 +19,16 @@ tfenv install
 ## Setup
 
 - Create & populate a `.env` in the project root following the [template](.env.template).
-- Initialise terraform:
-
-```sh
-cd terraform
-terraform init
-```
+- Edit [terraform backend](./terraform/terraform.tf) as required.
+- Initialise terraform: `./scripts/init.sh`
 
 ## Scripts
 
 From project root:
+
+### `./scripts/init.sh`
+
+Initialise terraform.
 
 ### `./scripts/plan.sh`
 
