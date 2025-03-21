@@ -2,4 +2,4 @@ export $(grep -v '^#' .env | xargs)
 
 cd terraform
 
-terraform destroy "$PLAN_FILENAME"
+terraform apply -destroy "$PLAN_FILENAME"
