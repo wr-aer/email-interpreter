@@ -38,6 +38,14 @@ Run local terraform plan.
 
 Run local terraform apply.
 
+### `./scripts/plan-destroy.sh`
+
+Run local terraform plan destroy.
+
+### `./scripts/destroy.sh`
+
+Run local terraform destroy.
+
 ## Important Notes
 
 For cost saving purposes this setup uses an already owned domain for receiving emails.
