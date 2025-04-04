@@ -1,0 +1,17 @@
+{
+  "name": "email-comprehend",
+  "version": "1.0.0",
+  "description": "Lambda to comprehend emails notified via sqs",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && zip -r build.zip build"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.148",
+    "typescript": "^5.8.2"
+  },
+  "volta": {
+    "node": "22.14.0",
+    "yarn": "4.8.1"
+  }
+}

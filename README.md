@@ -8,6 +8,7 @@ Plan is to build an email interpreter & sorter/tagger with potential use case be
 
 ## Prerequisites
 
+- Install volta CLI v1.1.1.
 - Install aws CLI of version 2.17.21 or above.
 - Install tfenv CLI of version 3.0.0 or above.
 - Install matching terraform version:
@@ -25,6 +26,10 @@ tfenv install
 ## Scripts
 
 From project root:
+
+### `./scripts/build.sh`
+
+Build project source code.
 
 ### `./scripts/init.sh`
 

@@ -3,3 +3,8 @@
 !.env.template
 plan.out
 terraform.tfstate*
+node_modules/
+.yarn/
+build/
+build.zip
+.DS_Store
